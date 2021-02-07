@@ -19,7 +19,7 @@ class Main:
         for f in files:
             path = root_directory + "/" + f;
             if (isdir(path)):
-                Main.__walk__(path, delete_setting, file_extensions);
+                Main.__walk__(self, path, delete_setting, file_extensions);
             else:
                 if len(file_extensions) != 0:
                     for f in file_extensions:
